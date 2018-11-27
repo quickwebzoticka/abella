@@ -24,6 +24,29 @@ a:hover, a:focus
  align-items: center
  justify-content: center
 
+.breadcrumbs
+	position: absolute
+	padding-top: 25px
+	z-index: 1000
+	top: 100px
+	width: 100%
+
+.breadcrumbs__wrapper
+	display: flex
+
+.breadcrumbs__item
+	margin-right: 40px
+	a
+		font-size: 18px
+		font-family: 'Roboto Light'
+		color: #ea2e44
+		font-weight: 400
+		border-bottom: 1px solid #ea2e44
+	&:last-child
+		margin-right: 0px
+		a
+			border-bottom: none
+
 .modal-dialog
 	height: 100vh
 	display: flex
@@ -1205,6 +1228,7 @@ footer
 
 .first-page
 	.eighth-screen
+		padding: 160px 0 100px
 		background: none
 		.text-section
 			p
@@ -1240,7 +1264,7 @@ footer
 	.first-screen
 		background: none
 		padding-bottom: 30px
-		padding-top: 160px
+		padding-top: 180px
 	.flexbox__both-sides
 		display: flex
 		justify-content: space-between
@@ -1405,7 +1429,7 @@ footer
 	.first-screen
 		background: none
 		padding-bottom: 0px
-		padding-top: 160px
+		padding-top: 180px
 		.flexbox-row
 			display: flex
 			align-items: center
@@ -1758,7 +1782,7 @@ footer
 
 	.first-page
 		.eighth-screen
-			padding: 100px 0 50px
+			padding: 180px 0 50px
 			.text-section
 				&:first-child
 					position: relative
@@ -2227,7 +2251,7 @@ footer
 
 	.first-page
 		.eighth-screen
-			padding: 100px 0 10px
+			padding: 130px 0 10px
 			.text-section
 				&:first-child
 					width: 100%
@@ -2376,5 +2400,13 @@ footer
 		padding: 100px 0 10px
 		background-position: 47% 105%
 		background-size: 337%
+
+
+@media screen and (max-width: 767px)
+	.breadcrumbs
+		top: 120px
+	.breadcrumbs__item
+		a
+			font-size: 14px
 
 	

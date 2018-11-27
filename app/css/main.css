@@ -58,6 +58,32 @@ a:hover, a:focus {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.breadcrumbs {
+  position: absolute;
+  padding-top: 25px;
+  z-index: 1000;
+  top: 100px;
+  width: 100%; }
+
+.breadcrumbs__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.breadcrumbs__item {
+  margin-right: 40px; }
+  .breadcrumbs__item a {
+    font-size: 18px;
+    font-family: 'Roboto Light';
+    color: #ea2e44;
+    font-weight: 400;
+    border-bottom: 1px solid #ea2e44; }
+  .breadcrumbs__item:last-child {
+    margin-right: 0px; }
+    .breadcrumbs__item:last-child a {
+      border-bottom: none; }
+
 .modal-dialog {
   height: 100vh;
   display: -webkit-box;
@@ -1657,6 +1683,7 @@ footer {
   display: none; }
 
 .first-page .eighth-screen {
+  padding: 160px 0 100px;
   background: none; }
   .first-page .eighth-screen .text-section p {
     font-family: "Gotham Pro";
@@ -1703,7 +1730,7 @@ footer {
 .second-page .first-screen {
   background: none;
   padding-bottom: 30px;
-  padding-top: 160px; }
+  padding-top: 180px; }
 
 .second-page .flexbox__both-sides {
   display: -webkit-box;
@@ -1934,7 +1961,7 @@ footer {
 .third-page .first-screen {
   background: none;
   padding-bottom: 0px;
-  padding-top: 160px; }
+  padding-top: 180px; }
   .third-page .first-screen .flexbox-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2376,7 +2403,7 @@ footer {
   footer {
     padding: 74px 0px 50px; }
   .first-page .eighth-screen {
-    padding: 100px 0 50px; }
+    padding: 180px 0 50px; }
     .first-page .eighth-screen .text-section:first-child {
       position: relative;
       width: 170%; }
@@ -2920,7 +2947,7 @@ footer {
             -ms-transform: translate(-10px, 0);
                 transform: translate(-10px, 0); }
   .first-page .eighth-screen {
-    padding: 100px 0 10px; }
+    padding: 130px 0 10px; }
     .first-page .eighth-screen .text-section:first-child {
       width: 100%; }
     .first-page .eighth-screen .text-section p span {
@@ -3074,3 +3101,9 @@ footer {
     background-position: 47% 105%;
     -webkit-background-size: 337% 337%;
             background-size: 337%; } }
+
+@media screen and (max-width: 767px) {
+  .breadcrumbs {
+    top: 120px; }
+  .breadcrumbs__item a {
+    font-size: 14px; } }
